@@ -405,15 +405,15 @@
     color: var(--primary);
 }
 
+.bg-color{
+    background-color: var(--bg);
+}
+
 .btn-color{
     background-color: var(--primary);
     color: whitesmoke ;
 }
 
-@media (max-width: 768px) {
-    .position-relative img{
-        min-height: 500px;
-    }
-}
+
 
 
