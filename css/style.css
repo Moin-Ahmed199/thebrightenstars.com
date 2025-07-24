@@ -6,6 +6,7 @@
     --bg:#ebab160a;
 }
 
+
 .fw-medium {
     font-weight: 600 !important;
 }
@@ -420,5 +421,19 @@
 
 
 
+a{
+  text-decoration: none;  
+  color: var(--dark);
+}
 
 
+.text-darkk{
+    color: var(--primary);
+}
+
+.bold-heading{
+    font-weight: 800;
+}
+.custom-icon{
+    font-size: 48px;
+}
