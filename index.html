@@ -1,24 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <title>The Brighten Stars Academy - Computer & Coaching Classes</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="utf-8">
+        <title>The Brighten Stars Academy - Computer & Coaching Classes</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- ✅ SEO Keywords -->
+        <meta name="keywords" content="The Brighten Stars Academy, Computer Courses, Coaching Classes, Web Development, Language Courses, UI/UX, Figma, WordPress, Internet, GitHub">
+        <meta name="description" content="The Brighten Stars Academy - Learn computer skills, languages, and coaching from beginner to advanced levels.">
+    
+        <!-- ✅ Preconnect & Preload Fonts Early -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+        <link rel="preload" as="font" href="https://fonts.gstatic.com/s/nunito/v16/XRXW3I6Li01BKofINeaBTMnFcQ.woff2" type="font/woff2" crossorigin>
+    
+        <!-- ✅ Preload Important Images -->
+        <link rel="preload" as="image" href="img/carousel-1.webp">
+        <link rel="preload" as="image" href="img/about.webp">
+        <link rel="preload" as="image" href="img/profile.webp">
+    
+        <!-- ✅ Favicon -->
+        <link href="img/logo.webp" rel="icon">
+    
+        <!-- ✅ Libraries Stylesheets -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    
+        <!-- ✅ Bootstrap & Icons -->
+  <!-- ✅ Bootstrap & Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 
-    <!-- ✅ SEO Keywords -->
-    <meta name="keywords" content="The Brighten Stars Academy, Computer Courses, Coaching Classes, Web Development, Language Courses, UI/UX Design, Figma, WordPress, Full Stack Development, Online Classes">
+    
+        <!-- ✅ Main Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+  
 
-    <!-- ✅ SEO Description -->
-    <meta name="description" content="The Brighten Stars Academy offers expert-led computer and coaching classes including web development, design, language, and academic support for students from class 1 to 12. Join us for flexible and certified learning.">
-
-    <!-- ✅ Favicon (Logo in tab) -->
-    <link href="img/logo.jpg" rel="icon">
-
-    <!-- Add CSS and other head content below -->
-
-
-</head> 
 
 <body>
     <!-- Spinner Start -->
@@ -33,7 +53,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <img src="img/logo.jpg" alt="Logo" style="height: 40px; width: auto; margin-right: 10px;">
+            <img src="img/logo.webp" alt="Logo" style="height: 40px; width: auto; margin-right: 10px;">
             <h2 class="m-0 text-color" id="main-heading">The Brighten Stars Academy</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -47,8 +67,10 @@
                 
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="" class="btn btn-color py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
-        </div>
+            <a href="#" class="btn btn-color py-4 px-lg-5 d-none d-lg-block">
+                Join Now <i class="bi bi-arrow-right ms-3"></i>
+              </a>
+                      </div>
     </nav>
     <!-- Navbar End -->
 
@@ -56,7 +78,8 @@
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5">
         <div class="position-relative header-banner">
-            <img class="img-fluid w-100 h-100 object-fit-cover" src="img/carousel-1.jpg" alt="">
+            <!-- <img class="img-fluid w-100 h-100 object-fit-cover" src="img/carousel-1.webp" alt=""> -->
+            <img src="img/carousel-1.webp" alt="carousel" class="img-fluid">
             <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center overlay-bg">
                 <div class="container">
                     <div class="row justify-content-start">
@@ -84,7 +107,7 @@
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
-                            <i class="fa fa-3x fa-laptop-code text-color mb-4"></i>
+                            <i class="bi bi-laptop fs-1 text-color mb-4"></i>
                             <h5 class="mb-3">Computer Courses</h5>
                             <p>Learn coding, IT skills, and software tools for your career growth.</p>
                         </div>
@@ -93,7 +116,7 @@
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
-                            <i class="fa fa-3x fa-language text-color mb-4"></i>
+                            <i class="bi bi-translate fs-1 text-color mb-4"></i>
                             <h5 class="mb-3">English language</h5>
                             <p>Improve your speaking, writing, and grammar skills with expert guidance.</p>
                         </div>
@@ -102,7 +125,7 @@
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
-                            <i class="fa fa-3x fa-chalkboard-teacher text-color mb-4"></i>
+                            <i class="bi bi-person-video fs-1 text-color mb-4"></i>
                             <h5 class="mb-3">Coaching classes</h5>
                             <p>Get personal attention and expert coaching to excel in your academics</p>
                         </div>
@@ -111,7 +134,7 @@
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
-                            <i class="fa fa-3x fa-globe text-color mb-4"></i>
+                            <i class="bi bi-globe2 fs-1 text-color mb-4"></i>
                             <h5 class="mb-3">Online Classes</h5>
                             <p>Join our online sessions and learn from home with live expert guidance.</p>
                         </div>
@@ -127,11 +150,12 @@
     <div class="container-xxl py-5">
         <div class="container" id="aboutid">
             <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 500px; " >
-                    <div class="position-relative h-100 ">
-                        <img class="img-fluid position-absolute w-100 h-100 " src="img/about.jpg" alt="" style="object-fit: cover;">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/about.webp" alt="about" loading="lazy" style="object-fit: cover;">
                     </div>
                 </div>
+                
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <h6 class="section-title bg-white text-start text-color pe-3">About Us</h6>
                     <h1 class="mb-4">Welcome to <br>The Brighten Stars</h1>
@@ -139,26 +163,46 @@
                     <p class="mb-4">Our mission is to empower students with practical skills and confidence to succeed in their careers and education.
 
                         At Brighten Stars, we believe in delivering quality education with experienced instructors, flexible learning modes, and recognized certifications.</p>
-               <div class="row gy-2 gx-4 mb-4">
+
+                       <div class="row gy-2 gx-4 mb-4">
     <div class="col-sm-6">
-        <p class="mb-0"><i class="fa fa-arrow-right text-color me-2"></i>Hands-on Project Training</p>
+        <p class="mb-0 d-flex align-items-center">
+            <i class="bi bi-arrow-right text-color me-2 fs-5"></i>
+            Hands-on Project Training
+        </p>
     </div>
     <div class="col-sm-6">
-        <p class="mb-0"><i class="fa fa-arrow-right text-color me-2"></i>Updated Curriculum</p>
+        <p class="mb-0 d-flex align-items-center">
+            <i class="bi bi-arrow-right text-color me-2 fs-5"></i>
+            Updated Curriculum
+        </p>
     </div>
     <div class="col-sm-6">
-        <p class="mb-0"><i class="fa fa-arrow-right text-color me-2"></i>Personalized Mentorship</p>
+        <p class="mb-0 d-flex align-items-center">
+            <i class="bi bi-arrow-right text-color me-2 fs-5"></i>
+            Personalized Mentorship
+        </p>
     </div>
     <div class="col-sm-6">
-        <p class="mb-0"><i class="fa fa-arrow-right text-color me-2"></i>Job Placement Assistance</p>
+        <p class="mb-0 d-flex align-items-center">
+            <i class="bi bi-arrow-right text-color me-2 fs-5"></i>
+            Job Placement Assistance
+        </p>
     </div>
     <div class="col-sm-6">
-        <p class="mb-0"><i class="fa fa-arrow-right text-color me-2"></i>Real-World Case Studies</p>
+        <p class="mb-0 d-flex align-items-center">
+            <i class="bi bi-arrow-right text-color me-2 fs-5"></i>
+            Real-World Case Studies
+        </p>
     </div>
     <div class="col-sm-6">
-        <p class="mb-0"><i class="fa fa-arrow-right text-color me-2"></i>24/7 Student Support</p>
+        <p class="mb-0 d-flex align-items-center">
+            <i class="bi bi-arrow-right text-color me-2 fs-5"></i>
+            24/7 Student Support
+        </p>
     </div>
 </div>
+
 
                     <a class="btn btn-color py-3 px-5 mt-2" href="">Read More</a>
                 </div>
@@ -180,7 +224,7 @@
                     <div class="row g-3">
                         <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
                             <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/cat-1.jpg" alt="">
+                                <img class="img-fluid" src="img/cat-1.webp" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
                                     <h5 class="m-0">Web Design</h5>
                                     <small class="text-color">2 Courses</small>
@@ -189,7 +233,7 @@
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
                             <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/cat-2.jpg" alt="">
+                                <img class="img-fluid" src="img/cat-2.webp" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
                                     <h5 class="m-0">Graphic Design</h5>
                                     <small class="text-color">3 Courses</small>
@@ -198,7 +242,7 @@
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
                             <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/cat-5.jpg" alt="">
+                                <img class="img-fluid" src="img/cat-5.webp" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
                                     <h5 class="m-0">Web Development</h5>
                                     <small class="text-color">4 Courses</small>
@@ -209,7 +253,7 @@
                 </div>
                 <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
                     <a class="position-relative d-block h-100 overflow-hidden" href="">
-                        <img class="img-fluid position-absolute w-100 h-100" src="img/cat-4.jpg" alt="" style="object-fit: cover;">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/cat-4.webp" alt="" style="object-fit: cover;">
                         <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
                             <h5 class="m-0">English language</h5>
                             <small class="text-color">3 Courses</small>
@@ -233,7 +277,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="course-item bg-color">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid " src="img/course-1.jpg" alt="">
+                            <img class="img-fluid " src="img/course-1.webp" alt="">
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-color px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-color px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
@@ -255,16 +299,19 @@
                             <h5 class="mb-4">Spoken English language</h5>
                         </div>
                         <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-color me-2"></i>Sir Rehmat Ullah</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-color me-2"></i>1.49 Hrs</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-color me-2"></i>50+ Students</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="bi bi-person-badge fs-5 text-color me-2"></i>
+                                Sir Rehmat Ullah</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="bi bi-clock fs-5 text-color me-2"></i>
+                                1.49 Hrs</small>
+                            <small class="flex-fill text-center py-2"><i class="bi bi-person fs-5 text-color me-2"></i>
+50+ Students</small>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="course-item bg-color">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid " src="img/course-2.jpg" alt="">
+                            <img class="img-fluid " src="img/course-2.webp" alt="">
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-color px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-color px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
@@ -287,16 +334,19 @@
                             <h5 class="mb-4">Graphic Designing </h5>
                         </div>
                         <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-color me-2"></i>Sir Bilal Awan</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-color me-2"></i>1 Hrs</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-color me-2"></i>20+ Students</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="bi bi-person-badge fs-5 text-color me-2"></i>
+                                Sir Bilal Awan</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="bi bi-clock fs-5 text-color me-2"></i>
+                                1 Hrs</small>
+                            <small class="flex-fill text-center py-2"><i class="bi bi-person fs-5 text-color me-2"></i>
+20+ Students</small>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="course-item bg-color">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid " src="img/course-3.jpg" alt="">
+                            <img class="img-fluid " src="img/course-3.webp" alt="">
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-color px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-color px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
@@ -318,9 +368,12 @@
                             <h5 class="mb-4">Web Design & Development</h5>
                         </div>
                         <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-color me-2"></i>Sir Moin Ahmed</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-color me-2"></i>2 Hrs</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-color me-2"></i>50+ Students</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="bi bi-person-badge fs-5 text-color me-2"></i>
+                                Sir Moin Ahmed</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="bi bi-clock fs-5 text-color me-2"></i>
+                                2 Hrs</small>
+                            <small class="flex-fill text-center py-2"><i class="bi bi-person fs-5 text-color me-2"></i>
+50+ Students</small>
                         </div>
                     </div>
                 </div>
@@ -341,13 +394,14 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item bg-color">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                            <img class="img-fluid" src="img/team-1.webp" alt="">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                                <a class="btn btn-sm-square btn-color mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-sm-square btn-color mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-sm-square btn-color mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-sm-square btn-color mx-1" href="#"><i class="bi bi-facebook"></i></a>
+                                <a class="btn btn-sm-square btn-color mx-1" href="#"><i class="bi bi-twitter-x"></i></a>
+                                <a class="btn btn-sm-square btn-color mx-1" href="#"><i class="bi bi-instagram"></i></a>
+                                
                             </div>
                         </div>
                         <div class="text-center p-4">
@@ -363,9 +417,10 @@
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                                <a class="btn btn-sm-square btn-color mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-sm-square btn-color mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-sm-square btn-color mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-sm-square btn-color mx-1" href="#"><i class="bi bi-facebook"></i></a>
+<a class="btn btn-sm-square btn-color mx-1" href="#"><i class="bi bi-twitter-x"></i></a>
+<a class="btn btn-sm-square btn-color mx-1" href="#"><i class="bi bi-instagram"></i></a>
+
                             </div>
                         </div>
                         <div class="text-center p-4">
@@ -377,13 +432,14 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item bg-color">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                            <img class="img-fluid" src="img/team-3.webp" alt="">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                                <a class="btn btn-sm-square btn-color mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-sm-square btn-color mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-sm-square btn-color mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-sm-square btn-color mx-1" href="#"><i class="bi bi-facebook"></i></a>
+<a class="btn btn-sm-square btn-color mx-1" href="#"><i class="bi bi-twitter-x"></i></a>
+<a class="btn btn-sm-square btn-color mx-1" href="#"><i class="bi bi-instagram"></i></a>
+
                             </div>
                         </div>
                         <div class="text-center p-4">
@@ -395,13 +451,14 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item bg-color">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                            <img class="img-fluid" src="img/team-4.webp" alt="">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                                <a class="btn btn-sm-square btn-color mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-sm-square btn-color mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-sm-square btn-color mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-sm-square btn-color mx-1" href="#"><i class="bi bi-facebook"></i></a>
+<a class="btn btn-sm-square btn-color mx-1" href="#"><i class="bi bi-twitter-x"></i></a>
+<a class="btn btn-sm-square btn-color mx-1" href="#"><i class="bi bi-instagram"></i></a>
+
                             </div>
                         </div>
                         <div class="text-center p-4">
@@ -419,11 +476,12 @@
     <div class="container-xxl py-5">
         <div class="container" id="aboutid">
             <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 500px; " >
-                    <div class="position-relative h-100 ">
-                        <img class="img-fluid position-absolute w-100 h-100 " src="img/profile.png" alt="" style="object-fit: cover;">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/profile.webp" alt="profile" loading="lazy" style="object-fit: cover;">
                     </div>
                 </div>
+                
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <h6 class="section-title bg-white text-start text-color pe-3">Owner & Founder</h6>
                     <h1 class="mb-4">Bilal Awan — Founder of <br>The Brighten Stars Academy</h1>
@@ -431,24 +489,43 @@
                     <p class="mb-4"><strong>Bilal Awan's</strong> vision is to empower learners through high-quality education, delivered by experienced instructors, with flexible learning options and government-certified programs that enhance their qualifications and open doors to future opportunities.</p>
                     <div class="row gy-2 gx-4 mb-4">
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-color me-2"></i>Expert Instructors</p>
+                            <p class="mb-0 d-flex align-items-center">
+                                <i class="bi bi-arrow-right text-color me-2 fs-5"></i>
+                                Expert Instructors
+                            </p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-color me-2"></i>Interactive Online Classes</p>
+                            <p class="mb-0 d-flex align-items-center">
+                                <i class="bi bi-arrow-right text-color me-2 fs-5"></i>
+                                Interactive Online Classes
+                            </p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-color me-2"></i>Government Certified Programs</p>
+                            <p class="mb-0 d-flex align-items-center">
+                                <i class="bi bi-arrow-right text-color me-2 fs-5"></i>
+                                Government Certified Programs
+                            </p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-color me-2"></i>Flexible Learning Options</p>
+                            <p class="mb-0 d-flex align-items-center">
+                                <i class="bi bi-arrow-right text-color me-2 fs-5"></i>
+                                Flexible Learning Options
+                            </p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-color me-2"></i>Career-Oriented Courses</p>
+                            <p class="mb-0 d-flex align-items-center">
+                                <i class="bi bi-arrow-right text-color me-2 fs-5"></i>
+                                Career-Oriented Courses
+                            </p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-color me-2"></i>Academic Support & Coaching</p>
+                            <p class="mb-0 d-flex align-items-center">
+                                <i class="bi bi-arrow-right text-color me-2 fs-5"></i>
+                                Academic Support & Coaching
+                            </p>
                         </div>
                     </div>
+                    
                     <a class="btn btn-color py-3 px-5 mt-2" href="">Read More</a>
                 </div>
                 
@@ -470,7 +547,7 @@
             </div>
             <div class="owl-carousel testimonial-carousel position-relative">
                 <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.png" style="width: 80px; height: 80px;">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.webp" style="width: 80px; height: 80px;">
                     <h5 class="mb-0">Sairo Bano</h5>
                     <p>BS Computer Science Student</p>
                     <div class="testimonial-text bg-light text-center p-4">
@@ -478,7 +555,7 @@
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-2.png" style="width: 80px; height: 80px;">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-2.webp" style="width: 80px; height: 80px;">
                     <h5 class="mb-0">Mateen</h5>
                     <p>BS Information Technology Student</p>
                     <div class="testimonial-text bg-light text-center p-4">
@@ -486,7 +563,7 @@
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.png" style="width: 80px; height: 80px;">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.webp" style="width: 80px; height: 80px;">
                     <h5 class="mb-0">Abdullah</h5>
                     <p>FSc Pre-Medical Student</p>
                     <div class="testimonial-text bg-light text-center p-4">
@@ -494,7 +571,7 @@
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-4.png" style="width: 80px; height: 80px;">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-4.webp" style="width: 80px; height: 80px;">
                     <h5 class="mb-0">Zeeshan</h5>
                     <p>Matric Board Exam Candidate</p>
                     <div class="testimonial-text bg-light text-center p-4">
@@ -520,14 +597,16 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <h4 class="text-white mb-3">Contact</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Plot no 578, sector 4f baldia town karachi</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+923485208826</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@buildifyx.com</p>
+                    <p class="mb-2"><i class="bi bi-geo-alt fs-5 me-3"></i>Plot no 578, sector 4f Baldia Town, Karachi</p>
+                    <p class="mb-2"><i class="bi bi-telephone fs-5 me-3"></i>+923485208826</p>
+                    <p class="mb-2"><i class="bi bi-envelope fs-5 me-3"></i>info@buildifyx.com</p>
+                    
                     <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="bi bi-facebook"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="bi bi-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="bi bi-linkedin"></i></a>
+                        
                     </div>
                 </div>
               
@@ -548,7 +627,7 @@
                         &copy; <a class="border-bottom" href="#">The Brighten Stars Academy</a>, All Right Reserved.
 
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">Buildify Web Services</a>
+                        Designed By <a class="border-bottom" href="https://buildifywebsite.netlify.app/">Buildify Web Services</a>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
@@ -567,31 +646,8 @@
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-color btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-
-
-    <head>
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
-
-
+  
+    
 
 
     <!-- JavaScript Libraries -->
