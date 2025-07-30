@@ -118,3 +118,13 @@ function updateHeading() {
 
 window.addEventListener('resize', updateHeading);
 window.addEventListener('load', updateHeading);
+
+
+
+  window.addEventListener('load', function () {
+    var iconLink = document.createElement('link');
+    iconLink.rel = 'stylesheet';
+    iconLink.href = 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css';
+    document.head.appendChild(iconLink);
+  });
+
