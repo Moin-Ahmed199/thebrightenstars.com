@@ -128,3 +128,31 @@ window.addEventListener('load', updateHeading);
     document.head.appendChild(iconLink);
   });
 
+
+
+//   ----formspace
+
+  document.getElementById("admissionForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // stop normal redirect
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    fetch("https://formspree.io/f/xblkqjwy", {
+        method: "POST",
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+    })
+    .then(response => {
+        if (response.ok) {
+            document.getElementById("thankYouOverlay").style.display = "flex";
+            form.reset();
+        } else {
+            alert("There was a problem submitting your form. Please try again.");
+        }
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        alert("Error submitting form. Please try again.");
+    });
+});

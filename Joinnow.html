@@ -52,7 +52,7 @@
                       </div>
     </nav>
 
-  <div class="form-wrapper ">
+  <!-- <div class="form-wrapper ">
     <div class="form-container position-relative">
       <div class="badge-offer">30% OFF</div>
       <h2 class="text-center mb-4">Join Now - Admission Form</h2>
@@ -155,7 +155,149 @@
         <button type="submit" class="btn btn-color mt-4 w-100">Submit</button>
       </form>
     </div>
+  </div> -->
+
+
+  <div class="form-wrapper">
+    <div class="form-container position-relative">
+      <div class="badge-offer">30% OFF</div>
+      <h2 class="text-center mb-4">Join Now - Admission Form</h2>
+  
+      <form id="admissionForm" method="POST">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" name="Full Name" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="fathername" class="form-label">Father's / Guardian's Name</label>
+            <input type="text" class="form-control" id="fathername" name="Father's Name" required>
+          </div>
+        </div>
+  
+        <div class="mb-3">
+          <label for="address" class="form-label">Address</label>
+          <textarea class="form-control" id="address" name="Address" rows="2" required></textarea>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="email" class="form-label">Email (Optional)</label>
+            <input type="email" class="form-control" id="email" name="Email">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="candidateContact" class="form-label">Candidate Contact Number</label>
+            <input type="text" class="form-control" id="candidateContact" name="Candidate Contact" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="guardianContact" class="form-label">Guardian Contact Number</label>
+            <input type="text" class="form-control" id="guardianContact" name="Guardian Contact">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="fatherOccupation" class="form-label">Father's Occupation</label>
+            <input type="text" class="form-control" id="fatherOccupation" name="Father's Occupation" placeholder="e.g., Teacher, Businessman, Engineer">
+          </div>
+        </div>
+  
+        <div>
+          <h5 class="form-label">Which Skills You Want to Enroll In?</h5>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="English Language" name="Skills[]">
+                <label class="form-check-label">English Language</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Freelancing" name="Skills[]">
+                <label class="form-check-label">Freelancing</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Web Design" name="Skills[]">
+                <label class="form-check-label">Web Design</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="UI/UX" name="Skills[]">
+                <label class="form-check-label">UI/UX</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Web Development" name="Skills[]">
+                <label class="form-check-label">Web Development</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Full-Stack Web Development" name="Skills[]">
+                <label class="form-check-label">Full-Stack Web Development</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Front-end Basic" name="Skills[]">
+                <label class="form-check-label">Front-end (Basic)</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Front-end Advance" name="Skills[]">
+                <label class="form-check-label">Front-end (Advanced)</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Graphic Designing" name="Skills[]">
+                <label class="form-check-label">Graphic Designing</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="WordPress" name="Skills[]">
+                <label class="form-check-label">WordPress</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="C.I.T" name="Skills[]">
+                <label class="form-check-label">C.I.T</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Other" name="Skills[]">
+                <label class="form-check-label">Other</label>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <button type="submit" class="btn btn-color mt-4 w-100">Submit</button>
+      </form>
+    </div>
   </div>
+  
+
+  <!-- messeg after submit--- -->
+
+  <div id="thankYouOverlay" style="
+  display:none;
+  position:fixed;
+  top:0;left:0;width:100%;height:100%;
+  background:rgba(0,0,0,0.6);
+  z-index:9999;
+  justify-content:center;
+  align-items:center;
+">
+  <div style="
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    max-width:400px;
+    text-align:center;
+  ">
+    <h2>Thanks for submitting!</h2>
+    <p>We will respond soon.  
+    Please make sure the details you provided are correct.</p>
+    <button onclick="window.location.href='index.html'" style="
+      margin-top:15px;
+      padding:10px 20px;
+      background:var(--primary);
+      color:white;
+      border:none;
+      border-radius:5px;
+      cursor:pointer;
+    ">Go Back to Home</button>
+  </div>
+</div>
+
+
+<!-- messeg after submit--- -->
 
   <!-- Footer Start -->
   <div class="container-fluid bg-dark text-light footer pt-5  wow fadeIn" data-wow-delay="0.1s">
